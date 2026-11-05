@@ -1,0 +1,36 @@
+name: nuclei-demo
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+
+  # core
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+
+  # data access (remote OME-Zarr)
+  - zarr<3
+  - numcodecs
+  - fsspec
+  - aiohttp
+  - requests
+  - dask
+
+  # image analysis
+  - scikit-image
+  - tifffile
+  - trackpy
+
+  # visualization
+  - napari
+  - pyqt
+
+  # notebooks
+  - jupyterlab
+  - ipykernel
+  - ipywidgets
+
+  # testing
+  - pytest
