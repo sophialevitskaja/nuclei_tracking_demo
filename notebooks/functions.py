@@ -1,9 +1,3 @@
-# utils.py
-import fsspec, zarr
-from matplotlib.colors import LinearSegmentedColormap
-
-URL = "https://public.czbiohub.org/royerlab/zebrahub/imaging/single-objective/ZSNS001_tail.ome.zarr"
-
 def open_level(level, url=URL):
     return zarr.open_array(fsspec.get_mapper(f"{url}/{level}"), mode="r")
 
